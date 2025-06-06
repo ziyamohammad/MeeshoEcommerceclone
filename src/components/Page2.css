@@ -1,0 +1,81 @@
+.page2{
+    width:100vw;
+    min-height:143vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.jewellery{
+    position:relative;
+    width:100%;
+    height:auto;
+
+}
+.jewelimage{
+   display: block;
+    width:100%;
+}
+.fourimages{
+    position:absolute;
+    top:10%;
+    left:66.66%;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+        max-width: none;
+        gap:70px;
+
+}
+.page2img{
+    width:120px;
+    display: block;
+}
+
+.head{
+    text-align: left;
+    font-size:36px;
+    font-weight: 100;
+    font-family: Mier;
+    display:flex;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+.brandsdisplay{
+  width: 100%;
+    height: 50vh;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    scroll-behavior: smooth;
+    gap: 40px;
+    margin-top: 10px;
+}
+.bothcontent2{
+    display:flex;
+    flex-direction: column;
+    width:90%;
+    height:auto;
+}
+.brandsdisplay::-webkit-scrollbar {
+  display: none;
+}
+.brandimg{
+   display: flex
+;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.spanimg{
+    width:224px;
+    display: block;
+}
+@media (max-width: 1025px) {
+    .page2img{
+        width:75px;
+    }
+    .fourimages{
+        gap:40px;
+    }
+}

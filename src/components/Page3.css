@@ -1,0 +1,102 @@
+.page3{
+    width:100vw;
+    min-height:100vh;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.companyslider{
+    height:30vh;
+    width:230%;
+    background-color: rgb(240, 233, 255);
+    display:flex;
+    align-items: center;
+    overflow-x:hidden;
+     gap:20px;
+     animation: scroll 15s linear infinite;
+}
+.companyslider:hover{
+    animation:none;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-30%);
+  }
+}
+
+.companie{
+   width:80%;
+   height:60%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+   border-radius: 8px;
+  
+}
+.companylogo{
+    width:43%;
+    display: block;
+}
+.page3shopimg{
+    width:100%;
+    display:block;
+}
+.page3shop{
+    width:100%;
+    display:flex;
+    position:relative;
+    
+}
+.random{
+    position:absolute;
+    width:60vw;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    top:17%;
+    left:36%;
+}
+.randomboth{
+    display:flex;
+    flex-direction: column;
+    height:40%;
+    
+    align-items:center;
+    justify-content: space-between;
+}
+.randomimg{
+    width:75%;
+    display: block;
+}
+.randomtext{
+    border: 1px solid rgb(255, 157, 0);
+    background: rgb(255, 245, 229);
+    font-weight: 600;
+    width:80%;
+    font-family: Mier;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(88, 10, 70);
+    padding: 4px 0px 6px;
+    border-radius: 10px;
+    margin-top: 7px;
+}
+
+@media screen and (max-width:1025px) {
+    .randomimg{
+        width:60%;
+    }
+    .randomtext{
+        font-size: 13px;
+    }
+}
+

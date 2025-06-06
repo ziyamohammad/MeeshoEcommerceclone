@@ -1,0 +1,40 @@
+export const companies = [
+    {
+        logo:"https://images.meesho.com/images/marketing/1743159302944.webp"
+    },
+    {
+        logo:"https://images.meesho.com/images/marketing/1743159322237.webp"
+    },
+    {
+        logo:"https://images.meesho.com/images/marketing/1743159363205.webp"
+    },
+    {
+        logo:"https://images.meesho.com/images/marketing/1743159377598.webp"
+    },
+    {
+        logo:"https://images.meesho.com/images/marketing/1743159393231.webp"
+    },
+    {
+        logo:"https://images.meesho.com/images/marketing/1743159415385.webp"
+    },
+    {
+        logo:"https://images.meesho.com/images/marketing/1744636558884.webp"
+    },
+    {
+        logo:"https://images.meesho.com/images/marketing/1744636599446.webp"
+    },
+   
+    {
+        logo:"https://images.meesho.com/images/marketing/1743159302944.webp"
+    },
+    {
+        logo:"https://images.meesho.com/images/marketing/1743159322237.webp"
+    },
+    {
+        logo:"https://images.meesho.com/images/marketing/1743159363205.webp"
+    },
+    {
+        logo:"https://images.meesho.com/images/marketing/1743159377598.webp"
+    },
+   
+];
