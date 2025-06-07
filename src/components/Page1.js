@@ -4,6 +4,8 @@ import React, { useEffect, useState } from 'react'
 
 const Page1 = () => {
   const[category,SetCategory] = useState([]);
+  const[categoryProducts,SetcategoryProducts]=useState([])
+  const[hovered,sethovered]=useState();
   const[images]=useState([
     {
       name:"Woman Dresses",
@@ -56,19 +58,46 @@ const Page1 = () => {
   
  },[])
 
-  useEffect(() => {
-    console.log("Updated categories:", category);
-  }, [category]);
+ const handleMouseEnter= async(name)=>{
+   sethovered(name)
+  try{
+    const response = await axios.get(`https://dummyjson.com/products/category/${name}`)
+    SetcategoryProducts(response.data.products)
+  }catch(error){
+    console.log("error");
+  }
+ }
+
+ const handleleave = () => {
+    sethovered(null);
+  SetcategoryProducts([])
+ }
+
+  // useEffect(() => {
+  //   console.log("Updated categories:", category);
+  // }, [category]);
    
 
   return (
     <div className="page1">
-    <div className="categoryslider">
+    <div className="categoryslider" onMouseLeave={handleleave}>
       {category.map((item)=>{
         return(
-          <div className="types">
+          <div className={hovered===item.name?"type1":"types"}  onMouseEnter={() => handleMouseEnter(item.name)}>
             {item.name}
+            {hovered===item.name && categoryProducts.length>0 &&(
+              <div className = "categorywise">
+                {categoryProducts.map((i)=>{
+                 
+                  return(
+                    <div className = "productdisplay">{i.title}</div>
+                  )
+                
+                })}
+              </div>
+            )}
           </div>
+        
         )
       })}
     </div>

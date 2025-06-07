@@ -1,0 +1,90 @@
+.page4{
+    width:100vw;
+    min-height:400vh;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.page4row{
+    display:flex;
+    height:auto;
+    width:90%;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.itemcard{
+    display:flex;
+    height:60vh;
+    width:240px;
+    align-items:center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 8px;
+    
+
+}
+.alignleft{
+    width:100%;
+    height:70%;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    padding:15px
+
+}
+.itemname{
+    font-family: Mier;
+    font-size: 18px;
+    color:rgb(139, 139, 163);
+    font-weight: 500;
+
+}
+.itemprice{
+    font-family: Mier;
+    color: rgb(53, 53, 67);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0px;
+    padding: 0px;
+}
+.deliveryon{
+    pointer-events: none;
+    color: rgb(97, 97, 115);
+    background: rgb(248, 248, 255);
+    padding: 4px 8px;
+    border-radius: 48px;
+    display: inline-flex
+;
+}
+.rating{
+    width:32%;
+    border-radius: 16px;
+    padding: 4px 8px;
+    background: rgb(3, 141, 99);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+    font-family: Mier;
+}
+.ratingreview{
+    width:100%;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-right:17px;
+    
+}
+.itemcardimg{
+    width:60%;
+
+}
