@@ -26,6 +26,9 @@
   gap:20px;
   border-bottom:0.5px solid rgb(189, 189, 189);
 }
+.navprofile1 , .navcart1{
+   display:none;
+}
 .img{
   width:160px;
   margin-left:20px;
@@ -59,14 +62,100 @@
   font-family: Mier;
   gap:10px;
 }
+.allrest1{
+   width:25%;
+  height:60%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Mier;
+  gap:10px;
+}
 .same{
  height:100%;
  width:1px;
  border:1.5px solid grey;
 }
+.same1{
+  display:none;
+}
 .navprofile, .navcart{
   display:flex;
   flex-direction: column;
+  position:relative;
 } 
+.navdropdown{
+  position:absolute;
+  background-color: white;
+  display:flex;
+  align-items:flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  top: 142%;
+  left:-231%;
+  width:252px;
+  height:auto;
+  z-index:545875653477;
+  padding:10px;
+  box-shadow: rgba(34, 34, 34, 0.12) 0px 2px 4px, rgba(34, 34, 34, 0.12) 0px 0px 1px;
+    border-radius: 0px 0px 8px 8px;
+  border:1px solid rgb(234, 234, 242);
+  font-family: Mier;
+
+
+}
+.text{
+  font-size: 18px;
+  font-weight: 500;
+}
+.navdropdown p{
+  font-size:12px;
+  color: rgb(97, 97, 115);
+
+}
+.navsignup{
+  cursor: pointer;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 0.0015em;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    background: rgb(159, 32, 137);
+    border: none;
+    padding: 12px;
+    display: block;
+    width: 100%;
+    margin:15px 0px 15px 0px;
+
+}
+.navorders{
+  width:100%;
+  height:auto;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  gap:10px;
+  padding:10px;
+  border-top:1px solid rgb(206, 206, 222);
+}
+.navdelete{
+  width:100%;
+  height:auto;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  gap:10px;
+  padding:10px;
+  border-top:1px solid rgb(206, 206, 222);
+}
+
  
 /* page1 css */
