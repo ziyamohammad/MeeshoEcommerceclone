@@ -1,0 +1,84 @@
+.indivisualproduct{
+    min-height:200vh;
+    height:auto;
+    width:90%;
+    display:flex;
+    flex-direction: row;
+  margin-top:60px;
+    justify-content:space-between ;
+}
+.productphoto{
+    width:50%;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    align-items: start;
+}
+.thumbnail{
+    width:45%;
+}
+.original{
+    width:100%;
+}
+.bothoriginal{
+    height:auto;
+    width:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buttons{
+    width:100%;
+    display:flex;
+}
+.addtocard{
+    color: rgb(159, 32, 137);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: Mier;
+    margin-right: 10px;
+    display: flex;
+    gap:10px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 0.0015em;
+    font-size: 15px;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(159, 32, 137);
+    padding: 12px;
+    width:50%;
+}
+.buynow{
+    width:50%;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: Mier;
+    margin-right: 10px;
+    display: flex;
+    gap:10px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 0.0015em;
+    font-size: 15px;
+    border-radius: 4px;
+    background:rgb(159, 32, 137);
+    border: 1px solid rgb(159, 32, 137);
+    padding: 12px;
+}

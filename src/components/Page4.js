@@ -5,7 +5,7 @@ import axios from "axios";
 import Item from "./Item";
 import { useNavigate } from "react-router";
 
-const Page4 = () => {
+const Page4 = ({handledisplay}) => {
      const navigate = useNavigate();
      const[items,Setitems]=useState([]);
 
@@ -27,15 +27,16 @@ useEffect(() => {
     console.log("Updated items:", items);
   }, [items]);
 
-  const handlenavigate = () =>{
+  const handlenavigate = (item) =>{
     navigate("/product")
+    handledisplay(item)
   }
   return (
     <div className = "page4">
         <div className="page4row">
             {items.map((item)=>{
                 return(
-                    <div className="page4colomn" key={item.id} onClick={handlenavigate}>
+                    <div className="page4colomn" key={item.id} onClick={()=>handlenavigate(item.id)}>
                         <Item 
                         src={item.images[0]} 
                         name={item.title}

@@ -10,6 +10,7 @@ import Product from './components/Product';
 function App() {
   const [login,setlogin]=useState();
   const[user,setuser]=useState();
+  const[props,setprops]=useState();
 
   const handlelogin=(login,number)=>{
     setlogin(login);
@@ -20,15 +21,19 @@ function App() {
     setlogin(false);
     setuser(""); 
   };
+
+  const handledisplay = (item) =>{
+     setprops(item)
+  }
   return (
     <div className="App">
      
       <Router>
          <Navbar login={login} user={user} handlelogout={handlelogout}/>
         <Routes>
-          <Route path="/" element={<Fullpage/>}/>
+          <Route path="/" element={<Fullpage handledisplay={handledisplay}/>}/>
           <Route path="/signup" element={<Signup handlelogin={handlelogin}/>}/>
-          <Route path="/product" element={<Product/>}/>
+          <Route path="/product" element={<Product props={props}/>}/>
         </Routes>
       </Router>
     </div>

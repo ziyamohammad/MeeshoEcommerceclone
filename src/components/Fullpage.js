@@ -4,13 +4,13 @@ import Page2 from './Page2'
 import Page3 from './Page3'
 import Page4 from './Page4'
 
-const Fullpage = () => {
+const Fullpage = ({handledisplay}) => {
   return (
     <div className="fullpage">
         <Page1/>
         <Page2/>
         <Page3/>
-        <Page4/>
+        <Page4 handledisplay={handledisplay}/>
       
     </div>
   )
