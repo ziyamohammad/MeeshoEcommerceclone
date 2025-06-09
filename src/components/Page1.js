@@ -61,7 +61,7 @@ const Page1 = () => {
  const handleMouseEnter= async(name)=>{
    sethovered(name)
   try{
-    const response = await axios.get(`https://dummyjson.com/products/category/${name}`)
+    const response = await axios.get(`https://dummyjson.com/products/category/${name}?limit=1000`)
     SetcategoryProducts(response.data.products)
   }catch(error){
     console.log("error");
