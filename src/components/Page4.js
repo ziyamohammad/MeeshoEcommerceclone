@@ -24,7 +24,7 @@ useEffect(()=>{
 },[])
 
 useEffect(() => {
-    console.log("Updated items:", items);
+    console.log("Updated pro:", items);
   }, [items]);
 
   const handlenavigate = (item) =>{

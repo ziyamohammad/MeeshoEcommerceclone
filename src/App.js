@@ -34,6 +34,7 @@ function App() {
           <Route path="/" element={<Fullpage handledisplay={handledisplay}/>}/>
           <Route path="/signup" element={<Signup handlelogin={handlelogin}/>}/>
           <Route path="/product" element={<Product props={props}/>}/>
+          
         </Routes>
       </Router>
     </div>

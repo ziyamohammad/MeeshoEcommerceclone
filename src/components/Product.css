@@ -82,3 +82,243 @@
     border: 1px solid rgb(159, 32, 137);
     padding: 12px;
 }
+.productdescription{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap:15px;
+    height:auto;
+    padding:10px;
+}
+.important{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;
+    width:100%;
+    height:auto;
+    border:0.5px solid rgb(139, 139, 163);
+    padding:20px;
+    border-radius:8px;
+    gap:15px;
+}
+.impname{
+    color:black;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+    font-family:Mier;
+    margin: 0px;
+    padding: 0px;
+}
+.impdes{
+      color: rgb(139, 139, 163);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    font-family:Mier;
+    margin: 0px;
+    padding: 0px;
+}
+.impprice{
+    color: rgb(53, 53, 67);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    font-family:Mier;
+    margin: 0px;
+    padding: 0px;
+}
+.ratingreview1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    flex-direction: row;
+    padding-right: 17px;
+    gap:20px;
+}
+.size{
+     display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;
+    width:100%;
+    height:auto;
+    border:0.5px solid rgb(139, 139, 163);
+    padding:20px;
+    border-radius:8px;
+    gap:15px;
+}
+.sizehead{
+    color: rgb(53, 53, 67);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    font-family:Mier;
+    margin: 0px;
+    padding: 0px;
+}
+.freesize{
+    background: rgb(255, 231, 251);
+    padding: 6px 16px;
+    border-radius: 40px;
+    border: 2px solid rgb(159, 32, 137);
+    margin: 6px 12px 6px 0px;
+    color:rgb(159, 32, 137);
+    min-width: 46px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    font-family: Mier;
+    justify-content: center;
+    font-weight: 600;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.productpagedetails{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    align-items:flex-start;
+     border:0.5px solid rgb(139, 139, 163);
+     border-radius: 8px;
+     padding:20px;
+}
+.productpagedetails h6{
+    color: black;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: Mier;
+    margin: 0px;
+    padding: 0px;
+}
+.brand , .category ,.productname,.netquantity , .dimensions ,.customeremail{
+    color: rgb(97, 97, 115);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    font-family:Mier;
+    margin: 0px;
+    padding: 0px;
+}
+.ratingandreviews{
+  width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    align-items:flex-start;
+     border:0.5px solid rgb(139, 139, 163);
+     border-radius: 8px;
+     padding:20px;   
+}
+.ratingandreviews h6{
+    color: black;
+    width:100%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: Mier;
+    margin: 0px;
+    padding-bottom: 10px;
+    border-bottom:0.5px solid rgb(139, 139, 163);
+}
+.customerratings{
+    height:auto;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:10px;
+    padding:15px 0px 15px 0px;
+    border-bottom:1px solid rgb(139, 139, 163);
+}
+.bothindivisual{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.customername{
+    color: rgb(97, 97, 115);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: Mier;
+}
+.rating1{
+    width: 50px;
+    border-radius: 16px;
+    padding: 4px 8px;
+    background: rgb(3, 141, 99);
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: Mier;
+}
+.review{
+    color: rgb(139, 139, 163);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    font-family:Mier;
+    margin: 0px;
+    padding: 0px;
+}
+.customreviews{
+    color: rgb(53, 53, 67);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    font-family:Mier;
+    margin: 0px;
+    padding: 0px;
+}
+.page4row1{
+    display: flex
+;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    
+}
+.similarproducts{
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+    align-items:flex-start;
+}
+.similarproducts h4{
+    color: rgb(53, 53, 67);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    font-family:Mier;
+    text-align: left;
+    margin: 0px;
+    padding: 0px 0px 16px ;
+}
