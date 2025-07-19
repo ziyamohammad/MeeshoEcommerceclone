@@ -129,11 +129,4 @@ yaml
 Copy
 Edit
 
----
 
-Let me know if:
-- You want a **banner image** for the top of the README.
-- You want to convert it into a **portfolio card** for your website.
-- You want help with deploying the backend so it’s 100% live.
-
-Your GitHub will start attracting recruiters once this is in place. Let’s upgrade every project like th
