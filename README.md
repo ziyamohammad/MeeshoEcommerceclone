@@ -4,26 +4,17 @@ A fully functional clone of the popular e-commerce platform **Meesho**, built us
 
 ## 🚀 Live Demo
 
-🔗 [Live Site on Vercel](https://your-deployed-url.vercel.app)  
+🔗 [Live Site on Vercel](https://meesho-ecommerceclone.vercel.app/)
 🔗 [Backend API](https://your-backend-url.com/api) *(if hosted)*
 
----
-
-## 📸 Screenshots
-
-| Home Page | Product Page | Cart Page |
-|-----------|--------------|-----------|
-| ![Home](./screenshots/home.png) | ![Product](./screenshots/product.png) | ![Cart](./screenshots/cart.png) |
-
----
 
 ## 🧰 Tech Stack
 
-- **Frontend:** React.js, Redux, React Router DOM, Axios, Bootstrap/Tailwind
+- **Frontend:** React.js, Redux, React Router DOM, Axios
 - **Backend:** Node.js, Express.js, JWT
 - **Database:** MongoDB, Mongoose
 - **Auth:** JWT + bcrypt for login/signup
-- **Deployment:** Vercel (frontend), Render/Heroku (backend), MongoDB Atlas
+- **Deployment:** Vercel (frontend), Render(backend), MongoDB Atlas
 
 ---
 
