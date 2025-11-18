@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# 🛒 Meesho E-Commerce Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully functional clone of the popular e-commerce platform **Meesho**, built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js). The app supports user authentication, product browsing, cart, search, and admin-level product management — with UI/UX inspired by Meesho.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+🔗 [Live Site on Vercel](https://meesho-ecommerceclone.vercel.app/)
+🔗 [Backend API](https://your-backend-url.com/api) *(if hosted)*
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🧰 Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend:** React.js, Redux, React Router DOM, Axios
+- **Backend:** Node.js, Express.js, JWT
+- **Database:** MongoDB, Mongoose
+- **Auth:** JWT + bcrypt for login/signup
+- **Deployment:** Vercel (frontend), Render(backend), MongoDB Atlas
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Features
 
-### `npm run build`
+### 👤 User Features
+- User registration & login (JWT-based authentication)
+- Browse products by category
+- Product search & filtering
+- Add to Cart / Remove from Cart
+- Cart persistence
+- Order placement (dummy/mock)
+- Responsive design (mobile-first)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔐 Admin Features
+- Admin login (separate role)
+- Add, edit, and delete products
+- View all users
+- Manage product inventory
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📁 Folder Structure
 
-### `npm run eject`
+meesho-clone/
+│
+├── client/ # React frontend
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── redux/
+│ │ └── App.js
+│ └── public/
+│
+├── server/ # Node.js backend
+│ ├── models/
+│ ├── routes/
+│ ├── controllers/
+│ ├── middleware/
+│ └── server.js
+│
+└── README.md
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+yaml
+Copy
+Edit
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔒 Authentication
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **User passwords hashed** using `bcrypt`
+- JWT token sent in headers for protected routes
+- Role-based access for admin & users
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ⚙️ Installation & Run Locally
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 🖥️ Prerequisites
 
-### Code Splitting
+- Node.js
+- MongoDB (local or Atlas)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 📦 Backend
 
-### Analyzing the Bundle Size
+```bash
+cd server
+npm install
+# Create .env file with Mongo URI & JWT secret
+npm start
+🌐 Frontend
+bash
+Copy
+Edit
+cd client
+npm install
+npm start
+🌍 Environment Variables
+In the /server/.env file:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ini
+Copy
+Edit
+MONGO_URI=your_mongo_db_uri
+JWT_SECRET=your_jwt_secret
+📊 Performance
+Optimized component rendering using React memoization
 
-### Making a Progressive Web App
+RESTful APIs designed for modular and scalable architecture
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Handles 1000+ mock products with efficient search and state management (Redux)
 
-### Advanced Configuration
+📚 Learnings
+Implemented Redux for large-scale state management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Practiced full-stack development with real-world ecommerce flow
 
-### Deployment
+Improved responsive design and UX handling edge cases
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+👨‍💻 Author
+Mohammad Ziya
+🔗 LinkedIn
+🔗 GitHub
 
-### `npm run build` fails to minify
+⭐ Feedback
+If you liked this project, please consider giving it a ⭐ on GitHub.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to fork it and build your own version — PRs are welcome!
+
+yaml
+Copy
+Edit
+
+
