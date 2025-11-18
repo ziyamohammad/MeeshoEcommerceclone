@@ -7,7 +7,7 @@ import Page4 from './Page4'
 const Fullpage = ({handledisplay}) => {
   return (
     <div className="fullpage">
-        <Page1/>
+        <Page1 handledisplay={handledisplay}/>
         <Page2/>
         <Page3/>
         <Page4 handledisplay={handledisplay}/>

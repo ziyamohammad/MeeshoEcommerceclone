@@ -5,10 +5,25 @@ import {ShoppingCart , ChevronsRight, Star, IndianRupee} from "lucide-react";
 import Item from './Item';
 import { useNavigate } from 'react-router';
 
-const Product = ({ props, handledisplay }) => {
+const Product = ({ props, handledisplay ,handlemovecart }) => {
   const [data, setdata] = useState({})
   const[sitem,setsitem]=useState([]);
   const navigate = useNavigate();
+ const [cart, setCart] = useState(() => {
+  const stored = localStorage.getItem("cart");
+  return stored ? JSON.parse(stored) : [];
+});
+
+// Sync cart to localStorage every time it updates
+useEffect(() => {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}, [cart]);
+
+const handlecart = () => {
+  setCart((prevCart) => [...prevCart, data]);
+  handlemovecart(cart)
+  navigate("/cart");
+};
 
   useEffect(() => {
     const fetchsingle = async () => {
@@ -18,6 +33,8 @@ const Product = ({ props, handledisplay }) => {
     }
     fetchsingle();
   }, [props])
+
+ 
 
  useEffect(() => {
   if (!data.category) return;
@@ -40,6 +57,7 @@ const Product = ({ props, handledisplay }) => {
       setdata(response.data) 
     }
 
+  
 
 
   return (
@@ -56,8 +74,8 @@ const Product = ({ props, handledisplay }) => {
               <img src={data.images} alt="Product Thumbnail" height="100%" width="100%" />
         </div>
         <div className="buttons">
-            <button className ="addtocard"><ShoppingCart/>Add to Cart</button>
-            <button className ="buynow"><ChevronsRight/>Buy Now</button>
+            <button className ="addtocard" onClick={handlecart}><ShoppingCart/>Add to Cart</button>
+            <button className ="buynow" ><ChevronsRight/>Buy Now</button>
         </div>
         </div>
       </div>

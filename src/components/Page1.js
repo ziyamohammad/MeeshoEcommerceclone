@@ -1,11 +1,13 @@
 import axios from 'axios';
 import "./Page1.css";
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router';
 
-const Page1 = () => {
+const Page1 = ({handledisplay}) => {
   const[category,SetCategory] = useState([]);
   const[categoryProducts,SetcategoryProducts]=useState([])
   const[hovered,sethovered]=useState();
+  const navigate = useNavigate()
   const[images]=useState([
     {
       name:"Woman Dresses",
@@ -73,6 +75,11 @@ const Page1 = () => {
   SetcategoryProducts([])
  }
 
+ const handleproductchoose = (i) =>{
+  navigate("/product")
+  handledisplay(i)
+ }
+
   // useEffect(() => {
   //   console.log("Updated categories:", category);
   // }, [category]);
@@ -90,7 +97,7 @@ const Page1 = () => {
                 {categoryProducts.map((i)=>{
                  
                   return(
-                    <div className = "productdisplay">{i.title}</div>
+                    <div className = "productdisplay" onClick={()=>{handleproductchoose(i.id)}}>{i.title}</div>
                   )
                 
                 })}

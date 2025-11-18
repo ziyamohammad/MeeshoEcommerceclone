@@ -60,6 +60,10 @@ useEffect(() => {
   }
 }, [product, items]);
 
+const handlenavcart = () => {
+  navigate("/cart")
+}
+
  
   return (
     <div className = "navbar" onMouseLeave={handleleave}>
@@ -98,7 +102,7 @@ useEffect(() => {
             </div>
            )}
            </span>
-      <span className = {isSignuppage?"navcart1":"navcart"}  ><ShoppingCart/>Cart</span>
+      <span className = {isSignuppage?"navcart1":"navcart"} onClick={handlenavcart} ><ShoppingCart/>Cart</span>
       </div>
     
       

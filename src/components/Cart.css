@@ -1,0 +1,109 @@
+.Cartcart{
+    width:70%;
+    display:flex;
+    align-items: left;
+    height:auto;
+    padding:30px;
+
+}
+.Cartdetails{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    padding-right:30px;
+    border-right:4px solid rgb(206, 206, 222);
+    margin-right:30px;
+    
+}
+.Cartcard{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    border:2px solid  rgb(206, 206, 222);
+    border-radius:12px;
+    padding: 16px;
+    gap:20px;
+    
+
+}
+.cartimage{
+    width:100px;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgcart{
+    width:100px;
+}
+.cartdetails{
+    display:flex;
+    flex-direction: column;
+     gap:20px;
+}
+.carttitle{
+    color: rgb(53, 53, 67);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: "Mier demi";
+}
+.removeitem{
+  display:flex;
+  align-items: center;
+  color: rgb(97, 97, 115);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Mier demi";
+}
+.pricedetails{
+    display:flex;
+    flex-direction: column;
+     width:30%;
+     gap:20px;
+}
+.tpp{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(97, 97, 115);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Mier book";
+}
+.ordertotal{
+     width:100%;
+    display: flex;
+    align-items: center;
+     justify-content: space-between;
+    color: rgb(53, 53, 67);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Mier demi";
+}
+.cont{
+    cursor: pointer;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 0.0015em;
+    font-size: 18px;
+     font-family: "Mier demi";
+     font-weight: 600;
+    line-height: 20px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    background: rgb(159, 32, 137);
+    border: none;
+    padding: 12px;
+    display: block;
+    width: 100%;
+}
